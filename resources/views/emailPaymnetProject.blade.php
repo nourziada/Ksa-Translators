@@ -215,7 +215,7 @@
                                         <tr>
                                             <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td">
                                                 
-                                                    <span style="color:#ffffff;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;التفاصيل&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                                    <span style="color:#fff;background: #0d74ce" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;التفاصيل&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -225,14 +225,14 @@
                             </tr>
                             <tr>
                                 <td style="text-align: right;padding-right: 40px; padding-bottom: 10px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
-                                    <span style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 125%; color: #333333; font-weight: bold;">اسم المتسخدم : </span>
+                                    <span style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 125%; color: #333333; font-weight: bold;">اسم  المستخدم : </span>
                                     <span style="margin: 0;">{{$userName}}</span>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td style="text-align: right;padding-right: 40px; padding-bottom: 10px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
-                                    <span style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 125%; color: #333333; font-weight: bold;">اسم المشروع : </span>
+                                    <span style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 125%; color: #333333; font-weight: bold;">الترجمة: </span>
                                     <span style="margin: 0;">{{$projectName}}</span>
                                 </td>
                             </tr>
@@ -274,7 +274,7 @@
         </div>
 
         <!-- Full Bleed Background Section : BEGIN -->
-        <table role="presentation" bgcolor="#709f2b" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+        <table role="presentation" bgcolor="#0d74ce" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
             <tr>
                 <td valign="top" align="center">
                     <div style="max-width: 600px; margin: auto;" class="email-container">
@@ -287,9 +287,8 @@
                             <tr>
                                 <td style="padding: 40px; text-align: center; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #ffffff;">
                                     <p style="margin: 0;">
-                                        نتمنى منك زيارة صفحة مشاريعك والقيام بتسديد المبلغ ليتم البدء في مشروعك ، 
-                                        <br>
-                                    مع تحياتنا الكاملة ، إدارة مالوقع </p>
+                                        
+                                    </p>
                                 </td>
                             </tr>
                         </table>

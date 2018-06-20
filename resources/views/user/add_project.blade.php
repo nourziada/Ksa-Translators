@@ -135,12 +135,12 @@
 
                                 </div>
                                 <div class="form-check mb-2">
-                                    <input class="form-check-input" required type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" required type="checkbox" value="" id="defaultCheck1" data-parsley-required-message="{{ trans('main.you_must_accept_term') }}">
                                     <label class="form-check-label" for="defaultCheck1">
                                         {{trans('main.agree_to_the')}} <a href="#">{{trans('main.terms_of_use')}}</a>
                                     </label>
                                 </div>
-                                <button id="submit_project" type="submit" class="btn btn-primary">{{trans('main.Submit')}}</button>
+                                <button id="submit_project" type="submit" class="btn btn-primary" style="margin-top: 15px;">{{trans('main.Submit')}}</button>
                             </div>
                         </div>
                     </form>
@@ -161,4 +161,11 @@
    
         </section>
 
+<style type="text/css">
+    .parsley-required
+    {
+        background-color: #f2dede;
+        padding: 8px;
+    }
+</style>
 @stop

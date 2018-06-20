@@ -70,24 +70,44 @@ class ReplyController extends Controller
         $project->reply_at = Carbon::now();
         $project->save();
 
-        $supervisors = User::where('admin',2)->get();
-        if($supervisors->count() > 0)
+        if(Auth::user()->admin == 0)
         {
-            foreach($supervisors as $super)
+
+
+            $supervisors = User::where('admin',2)->get();
+            if($supervisors->count() > 0)
             {
-                $email = $super->email;
-                $sent = Mail::send('emailReplayProject', ['userName' => Auth::user()->name , 'projectName' => $project->title ], function ($message) use ($email)
+                foreach($supervisors as $super)
                 {
+                    $email = $super->email;
+                    $sent = Mail::send('emailReplayProject', ['userName' => Auth::user()->name , 'projectName' => $project->title ], function ($message) use ($email)
+                    {
 
-                    $message->from('info@ksatranslators.com' , 'info KSA Translators');
+                        $message->from('info@ksatranslators.com' , 'info KSA Translators');
 
-                    $message->to($email,$name = null);
+                        $message->to($email,$name = null);
 
-                    $message->subject("رد جديد من مستخدم - مترجمو السعودية");
+                        $message->subject("رد جديد من مستخدم - مترجمو السعودية");
 
-                });
+                    });
+                }
             }
+        }else
+        {
+            $email = User::find($project->user_id)->email;
+            $use_name = User::find($project->user_id)->name;
+                    $sent = Mail::send('emailNewSuperReplayProject', ['userName' => $use_name , 'projectName' => $project->title ], function ($message) use ($email)
+                    {
+
+                        $message->from('info@ksatranslators.com' , 'KSA Translators');
+
+                        $message->to($email,$name = null);
+
+                        $message->subject("رد جديد على طلب الترجمة - مترجمو السعودية");
+
+                    });
         }
+        
         
     	Session::flash('success-toastr', Lang::get('main.reply_add_succ'));
         return redirect()->back();

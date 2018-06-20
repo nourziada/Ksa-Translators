@@ -91,16 +91,17 @@ class ProjectController extends Controller
 
                                 $message->to($email,$name = null);
 
-                                $message->subject("اشعار : هناك عملية تحويل سداد جديدة");
+                                $message->subject("اشعار : هناك عملية تحويل   جديدة - مترجمو السعودية");
 
                             });
                         }
                     }
 
+        $email =Auth::user()->email;
         $sent = Mail::send('emailPaymnetToUserProject', ['userName' => Auth::user()->name , 'projectName' => $project->title ], function ($message) use ($email)
                             {
 
-                                $message->from('info@ksatranslators.com' , 'no-replay KSA Translators');
+                                $message->from('info@ksatranslators.com' , 'KSA Translators');
 
                                 $message->to($email,$name = null);
 

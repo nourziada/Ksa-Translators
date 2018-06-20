@@ -53,7 +53,7 @@ return [
     'max'                  => [
         'numeric' => 'The :attribute may not be greater than :max.',
         'file'    => 'The :attribute may not be greater than :max kilobytes.',
-        'string'  => 'حقل :attribute يجب ان لا يتجاوز :max حرف.',
+        'string'  => 'حقل  :attribute يجب ان لا يتجاوز :max حرف.',
         'array'   => 'The :attribute may not have more than :max items.',
     ],
     'mimes'                => 'The :attribute must be a file of type: :values.',

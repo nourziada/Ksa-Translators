@@ -205,32 +205,9 @@
                             <tr>
                                 <td  style="text-align: center; padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
                                     <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 24px; line-height: 125%; color: #333333; font-weight: normal;">مرحبا  {{$userName}}</h1>
-                                    <p style="margin: 0;">تم قبول طلب الترجمة ، واضافة قيمة رسوم الخدمة يمكنك الدخول لحسابك و اختيار الطريقة الانسب لسداد الفاتورة</p>
+                                    <p style="margin: 0;">يوجد رد جديد من فريق مترجمو السعودية على طلبك فضلا قم بالدخول لحسابك ومتابعة الطلب</p>
                                 </td>
                             </tr>
-
-                            <tr>
-                                <td style="text-align: center;padding-right: 40px; padding-bottom: 10px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
-                                    <span style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 125%; color: #333333; font-weight: bold;">قيمة الفاتورة المستحقة مقابل الخدمة :  </span> <span style="margin: 0;">{{$price}} </span>  <span style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 125%; color: #333333; font-weight: bold;"> ريال سعودي  </span>
-                                   
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td  style="text-align: center; padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
-                                    
-                                    <p style="margin: 0;">The translation request has been accepted, and the value of the service fee has been added. You can access your account and choose the appropriate method for paying the bill</p>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align: center;padding-right: 40px; padding-bottom: 10px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
-                                    <span style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 125%; color: #333333; font-weight: bold;">Value of bill due for service  :  </span> <span style="margin: 0;">{{$price}} SAR</span> 
-                                   
-                                </td>
-                            </tr>
-
-
 
                             <tr>
                                 <td style="text-align: center;padding-right: 40px; padding-bottom: 10px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
@@ -238,6 +215,25 @@
                                     <span style="margin: 0;">{{$projectName}}</span>
                                 </td>
                             </tr>
+
+
+                            <tr>
+                                <td  style="text-align: center; padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
+                                    
+                                    <p style="margin: 0;">There is a new response from the team of Saudi translators on your request</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="text-align: center;padding-right: 40px; padding-bottom: 10px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
+                                    <span style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 125%; color: #333333; font-weight: bold;">Translation  :  </span> <span style="margin: 0;">{{$projectName}}</span> 
+                                   
+                                </td>
+                            </tr>
+
+
+
+                            
 
                             
 

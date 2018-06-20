@@ -71,7 +71,7 @@ class ProjectController extends Controller
         $sent = Mail::send('emailAcceptProject', ['userName' => $userName, 'price' => $price , 'projectName' => $projectName ], function ($message) use ($email)
         {
 
-            $message->from('info@ksatranslators.com' , 'no-replay Translation');
+            $message->from('info@ksatranslators.com' , 'ksatranslators');
 
             $message->to($email,$name = null);
 
