@@ -91,7 +91,7 @@ class ProjectController extends Controller
 
                                 $message->to($email,$name = null);
 
-                                $message->subject("اشعار : هناك عملية تحويل   جديدة - مترجمو السعودية");
+                                $message->subject("إشعار : هناك عملية تحويل جديدة - مترجمو السعودية");
 
                             });
                         }
@@ -197,7 +197,7 @@ class ProjectController extends Controller
                             $sent = Mail::send('emailPaymnetProject', ['userName' => Auth::user()->name , 'projectName' => $project->title ], function ($message) use ($email)
                             {
 
-                                $message->from('info@ksatranslators.com' , 'no-replay KSA Translators');
+                                $message->from('info@ksatranslators.com' , 'KSA Translators');
 
                                 $message->to($email,$name = null);
 
@@ -220,9 +220,22 @@ class ProjectController extends Controller
                         Session::flash('success-toastr',  Lang::get('main.success_payment_done') );
 
                 }
+                else
+                {
+                    Session::flash('error-toastr',  Lang::get('main.Your_payment_was_unsuccessful') );
+                    return redirect()->route('index');
+                }
 
+            }else
+            {
+                Session::flash('error-toastr',  Lang::get('main.Your_payment_was_unsuccessful') );
+                return redirect()->route('index');
             }
 
+        }else
+        {
+            Session::flash('error-toastr',  Lang::get('main.Your_payment_was_unsuccessful') );
+            return redirect()->route('index');
         }
 
         return redirect()->route('projects.show',$project->id);

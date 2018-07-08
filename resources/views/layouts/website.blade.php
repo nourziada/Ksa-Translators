@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/logo.png')}}"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/logo.png')}}"/>
     @include('includes.style')
     <title>{{$title}}</title>
 </head>

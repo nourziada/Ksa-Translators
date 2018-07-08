@@ -121,6 +121,7 @@ return [
     'success_payment_transfar_done' => 'Thanks for paying the amount, the condition will be verified and the service will be started',
     'max_lenght_text' => 'max character',
     'you_must_accept_term' => 'You must agree to the Terms of Use',
+    'Your_payment_was_unsuccessful' => 'Your payment was unsuccessful',
 
 
 

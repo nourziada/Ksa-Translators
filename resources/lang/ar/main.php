@@ -121,6 +121,7 @@ return [
     'success_payment_transfar_done' => 'شكرا لسداد المبلغ ، سوف يتم التحقق من الحواله و بدء بتنفيذ الخدمة ',
     'max_lenght_text' => 'حرف كحد أقصى',
     'you_must_accept_term' => 'يجب ان تقوم بالموافقة على شروط الاستخدام',
+    'Your_payment_was_unsuccessful' => 'عملية الدفع لم تتم بنجاح',
     
     
 ];

@@ -90,9 +90,10 @@ class HomeController extends Controller
 
     public function updateUsers(Request $request)
     {
+        $user = User::findOrFail($request->user_id);
         $this->validate($request,[
                 'name' => 'required|max:255',
-                'email' => 'required|string|email|max:255|unique:users',
+                'email' => 'required|string|email|max:255|unique:users,email,'.$user->id,
                 'mobile' => 'required|max:255',
                 'country' => 'required|max:255',
                 'city' => 'required|max:255',
@@ -109,7 +110,7 @@ class HomeController extends Controller
 
             ]);
 
-        $user = User::findOrFail($request->user_id);
+        
         $user->name = $request->name;
         $user->email = $request->email;
         $user->mobile = $request->mobile;
